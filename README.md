@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](https://github.com/hemanuela/order-summary-component-main/blob/main/design/my-screenshot.JPG)
 
 
 ### Links
