@@ -1,0 +1,190 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(225, 100%, 94%);
+
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;  
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    width: 28.12rem;
+    height: 41.8rem;
+
+    border-radius: 0.93rem;
+    background-color: hsl(0, 0%, 100%);
+
+    text-align: center;
+
+    font-family: 'Red Hat Display';
+    font-size: 1rem;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+header img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.order-summary {
+    margin: 2rem 5rem;
+}
+
+.order-summary h1 {
+    color:hsl(223, 47%, 23%);
+    margin-bottom: 1.5rem;
+}
+
+.order-summary p, .order-plan span, .cancel-link {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.order-plan p {
+    color: hsl(223, 47%, 23%) ;
+    text-align: left;
+    font-weight: 700;
+}
+
+.order-plan a {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.order-plan {
+    background-color: hsl(225, 100%, 98%);
+    margin: 2rem 3rem;
+    height: 6.06rem;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+
+    border-radius: 0.93rem;
+    line-height: 1.5rem;
+}
+
+.order-plan img { /** BEAT ANIMATION - SONG ICON - MY EXTRA MILE **/
+	-webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+	        animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
+.change-link {
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+button {
+    width: 21.8rem;
+    height: 3rem;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+
+    border-radius: 0.62rem;
+    margin-bottom: 1.5rem;
+
+    box-shadow: rgba(28, 12, 102, 0.438) 0px 5px 15px;
+}
+
+button:hover{
+    background-color: hsla(245, 75%, 52%, 0.712);
+    cursor: pointer;
+}
+
+.cancel-link {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+
+/** MEDIA QUERY 810 - 240 **/
+@media only screen and (max-width: 640px) and (min-width: 240px){
+    body {
+        background-image: url('images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .container{
+        width: 20.6rem;
+        height: 35.6rem;
+        margin: 4.5rem 1.5rem;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    .order-summary h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .order-summary {
+        margin: 2rem 2rem;
+    }
+
+    .order-plan {
+       margin: 2rem 1rem;
+       height: 5rem;
+    }
+
+    button {
+        width: 17.5rem;
+        height: 3rem;
+    }
+  
+}
+
+
+/** BEAT ANIMATION - SONG ICON - MY EXTRA MILE **/
+  @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  
