@@ -90,7 +90,7 @@ header img {
     font-size: 0.75rem;
 }
 
-button {
+.payment-bt{
     width: 21.8rem;
     height: 3rem;
     font-family: 'Red Hat Display';
@@ -105,15 +105,31 @@ button {
     box-shadow: rgba(28, 12, 102, 0.438) 0px 5px 15px;
 }
 
-button:hover{
+.payment-bt:hover{
     background-color: hsla(245, 75%, 52%, 0.712);
     cursor: pointer;
 }
 
-.cancel-link {
+.change-bt {
+    background-color: transparent;
+    color: hsl(245, 75%, 52%) ;
+    font-family: 'Red Hat Display';
     font-weight: 700;
+    text-decoration: underline;
+    text-align: right;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+.cancel-bt {
     font-size: 0.75rem;
-    text-decoration: none;
+    background-color: transparent;
+    color: hsl(224, 23%, 55%) ;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    text-align: right;
+    cursor: pointer;
+    padding-right: 1rem;
 }
 
 
@@ -149,7 +165,7 @@ button:hover{
        height: 5rem;
     }
 
-    button {
+    .payment-bt {
         width: 17.5rem;
         height: 3rem;
     }
